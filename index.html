@@ -3,219 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoX - Modern Cryptocurrency Platform</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>wTOKENx Ecosystem - 10 Tokens Envueltos en Polygon</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <a href="#" class="logo">CryptoX</a>
-        <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="#tokens">Tokens</a>
-            <a href="#stats">Stats</a>
-            <a href="#about">About</a>
-            <a href="#" class="cta-button">Get Started</a>
-        </div>
-        <div class="mobile-menu">
-            <i class="fas fa-bars"></i>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">wTOKEN<span class="gradient-text">x</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#tokens">Tokens</a></li>
+                <li><a href="#features">Mecanismo</a></li>
+                <li><a href="#stats">Estadísticas</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="parallax-layer layer-1"></div>
-        <div class="parallax-layer layer-2"></div>
-        <div class="hero-content animate">
-            <h1 class="animate delay-1">The Future of Cryptocurrency Trading</h1>
-            <p class="animate delay-2">Join millions of users trading and storing their cryptocurrencies securely with CryptoX. The most advanced platform with cutting-edge technology.</p>
-            <div class="hero-buttons animate delay-3">
-                <a href="#" class="cta-button">Start Trading</a>
-                <a href="#" class="secondary-button">Learn More</a>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Bienvenido al <span class="gradient-text">Ecosistema wTOKENx</span>
+            </h1>
+            <p class="hero-subtitle">
+                10 tokens envueltos con fee del 3% • Buyback automático • Burn deflacionario
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">Tokens</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3%</span>
+                    <span class="stat-label">Fee por tx</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50%</span>
+                    <span class="stat-label">a Tesorería</span>
+                </div>
+            </div>
+            <button class="btn-primary" onclick="window.open('https://app.uniswap.org', '_blank')">
+                Explorar Pools
+            </button>
+        </div>
+    </section>
+
+    <!-- Tokens Grid Section -->
+    <section id="tokens" class="tokens-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros <span class="gradient-text">10 Tokens</span></h2>
+            <p class="section-subtitle">Cada token envuelto con el mismo mecanismo probado</p>
+            
+            <div class="tokens-grid" id="tokensGrid">
+                <!-- Los tokens se cargarán dinámicamente con JavaScript -->
             </div>
         </div>
-        <img src="assets/bitcoin.jpg" alt="Crypto Illustration" class="hero-image animate delay-4">
     </section>
 
     <!-- Features Section -->
-    <section class="section" id="features">
-        <h2 class="section-title">Why Choose CryptoX</h2>
-        <div class="features-grid">
-            <div class="feature-card animate">
-                <div class="feature-icon">
-                    <i class="fas fa-shield-alt"></i>
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Mecanismo <span class="gradient-text">3-30-20</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>3% Fee</h3>
+                    <p>En cada transferencia de cualquier token wTOKENx</p>
                 </div>
-                <h3>Secure Storage</h3>
-                <p>Our multi-signature wallets and cold storage solutions ensure your assets are always protected from threats.</p>
-            </div>
-            <div class="feature-card animate delay-1">
-                <div class="feature-icon">
-                    <i class="fas fa-bolt"></i>
+                <div class="feature-card">
+                    <h3>50% Tesorería</h3>
+                    <p>Va a tu wallet principal</p>
                 </div>
-                <h3>Lightning Fast</h3>
-                <p>Experience instant transactions with our high-performance trading engine that executes orders in milliseconds.</p>
-            </div>
-            <div class="feature-card animate delay-2">
-                <div class="feature-icon">
-                    <i class="fas fa-chart-line"></i>
+                <div class="feature-card">
+                    <h3>30% Buyback</h3>
+                    <p>Fortalecimiento del token</p>
                 </div>
-                <h3>Advanced Trading</h3>
-                <p>Access professional trading tools, charts, and indicators to make informed decisions in real-time.</p>
-            </div>
-            <div class="feature-card animate delay-3">
-                <div class="feature-icon">
-                    <i class="fas fa-globe"></i>
+                <div class="feature-card">
+                    <h3>20% Burn</h3>
+                    <p>Efecto deflacionario</p>
                 </div>
-                <h3>Global Access</h3>
-                <p>Trade anytime, anywhere with our mobile apps available on all platforms and in multiple languages.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="section" id="stats">
-        <div class="stats">
-            <div class="stat-item animate">
-                <div class="stat-number">$50B+</div>
-                <div class="stat-label">Monthly Trading Volume</div>
-            </div>
-            <div class="stat-item animate delay-1">
-                <div class="stat-number">10M+</div>
-                <div class="stat-label">Active Users</div>
-            </div>
-            <div class="stat-item animate delay-2">
-                <div class="stat-number">150+</div>
-                <div class="stat-label">Countries Supported</div>
-            </div>
-            <div class="stat-item animate delay-3">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Customer Support</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tokens Section -->
-    <section class="section" id="tokens">
-        <h2 class="section-title">Popular Tokens</h2>
-        <div class="tokens-grid">
-            <div class="token-card animate">
-                <div class="token-icon">
-                    <i class="fab fa-bitcoin"></i>
-                </div>
-                <div class="token-info">
-                    <h4>Bitcoin</h4>
-                    <p>BTC</p>
-                </div>
-                <div class="token-price">
-                    <div class="price">$42,850.36</div>
-                    <div class="change">+5.2%</div>
-                </div>
-            </div>
-            <div class="token-card animate delay-1">
-                <div class="token-icon">
-                    <i class="fab fa-ethereum"></i>
-                </div>
-                <div class="token-info">
-                    <h4>Ethereum</h4>
-                    <p>ETH</p>
-                </div>
-                <div class="token-price">
-                    <div class="price">$2,350.75</div>
-                    <div class="change">+3.8%</div>
-                </div>
-            </div>
-            <div class="token-card animate delay-2">
-                <div class="token-icon">
-                    <i class="fas fa-coins"></i>
-                </div>
-                <div class="token-info">
-                    <h4>Cardano</h4>
-                    <p>ADA</p>
-                </div>
-                <div class="token-price">
-                    <div class="price">$0.45</div>
-                    <div class="change">+1.2%</div>
-                </div>
-            </div>
-            <div class="token-card animate delay-3">
-                <div class="token-icon">
-                    <i class="fas fa-fire"></i>
-                </div>
-                <div class="token-info">
-                    <h4>Solana</h4>
-                    <p>SOL</p>
-                </div>
-                <div class="token-price">
-                    <div class="price">$102.30</div>
-                    <div class="change">+7.5%</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section">
-        <div class="cta">
-            <div class="cta-content">
-                <h2 class="animate">Ready to Join the Crypto Revolution?</h2>
-                <p class="animate delay-1">Sign up today and get $10 in free Bitcoin when you make your first trade. Plus, enjoy zero trading fees for your first month.</p>
-                <a href="#" class="cta-button animate delay-2">Create Free Account</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>CryptoX</h3>
-                <p>The most advanced cryptocurrency platform with cutting-edge technology for secure trading and storage.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Partners</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Trading</a></li>
-                    <li><a href="#">Wallet</a></li>
-                    <li><a href="#">Merchant</a></li>
-                    <li><a href="#">Institutional</a></li>
-                    <li><a href="#">API</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">System Status</a></li>
-                    <li><a href="#">Fees</a></li>
-                    <li><a href="#">Legal</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 CryptoX. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 wTOKENx Ecosystem - Construido en Polygon</p>
+            <p class="footer-small">Todos los tokens verificados en Polygonscan</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Datos de tus 10 tokens (verificados)
+        const tokens = [
+            {
+                symbol: "wSANDx",
+                name: "Wrapped SAND",
+                contract: "0x8015bbC887D41Dae753913d3353843d1e8dcAb52",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/80480",
+                tokenBase: "SAND"
+            },
+            {
+                symbol: "wLINKx",
+                name: "Wrapped LINK",
+                contract: "0x42717A2Ac0dAD6F1823233C2Cc76366aFFF2e924",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/80579",
+                tokenBase: "LINK"
+            },
+            {
+                symbol: "wAAVEx",
+                name: "Wrapped AAVE",
+                contract: "0xcb5D56eedd59B35002816dccA997483a795B0cB4",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/80608",
+                tokenBase: "AAVE"
+            },
+            {
+                symbol: "wUNIx",
+                name: "Wrapped UNI",
+                contract: "0xEA222267DaDda8E985fd3984eEB2261136211232",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/80729",
+                tokenBase: "UNI"
+            },
+            {
+                symbol: "wPOLx",
+                name: "Wrapped POL",
+                contract: "0x092dDF3942bd822c4B0bBae9f4cC1c010570b7F9",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/80751",
+                tokenBase: "POL"
+            },
+            {
+                symbol: "wGRTx",
+                name: "Wrapped GRT",
+                contract: "0x09BcC7aC570a1c72754A69Ed99bb23320C8b39ed",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/80932",
+                tokenBase: "GRT"
+            },
+            {
+                symbol: "wCRVx",
+                name: "Wrapped CRV",
+                contract: "0x89f253a6Fa78F21F6651E19c0f592C9966E30F31",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/80956",
+                tokenBase: "CRV"
+            },
+            {
+                symbol: "wSNXx",
+                name: "Wrapped SNX",
+                contract: "0x5537152f29D9B32E22262Ef36d84BeF695D7dAd5",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/80964",
+                tokenBase: "SNX"
+            },
+            {
+                symbol: "wBALx",
+                name: "Wrapped BAL",
+                contract: "0x510Fe76ac029710B74C1E9b81d3410aBC6c51A22",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/80973",
+                tokenBase: "BAL"
+            },
+            {
+                symbol: "wLDOx",
+                name: "Wrapped LDO",
+                contract: "0x09CD2d951C121C4915395c716421fd5a82B55F01",
+                poolUrl: "https://app.uniswap.org/positions/v4/polygon/81041",
+                tokenBase: "LDO"
+            }
+        ];
+
+        // Función para renderizar los tokens
+        function renderTokens() {
+            const grid = document.getElementById('tokensGrid');
+            if (!grid) return;
+            
+            let html = '';
+            tokens.forEach(token => {
+                html += `
+                    <div class="token-card">
+                        <h3 class="token-symbol">${token.symbol}</h3>
+                        <p class="token-name">${token.name}</p>
+                        <p class="token-base">Base: ${token.tokenBase}</p>
+                        <p class="token-contract" title="${token.contract}">
+                            ${token.contract.slice(0, 8)}...${token.contract.slice(-6)}
+                        </p>
+                        <div class="token-links">
+                            <a href="${token.poolUrl}" target="_blank" class="btn-small">Ver Pool</a>
+                            <button onclick="addToMetaMask('${token.contract}', '${token.symbol}')" class="btn-small">
+                                Añadir a MetaMask
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+            grid.innerHTML = html;
+        }
+
+        // Función para añadir token a MetaMask
+        async function addToMetaMask(address, symbol) {
+            if (!window.ethereum) {
+                alert('MetaMask no está instalado');
+                return;
+            }
+            
+            try {
+                await window.ethereum.request({
+                    method: 'wallet_watchAsset',
+                    params: {
+                        type: 'ERC20',
+                        options: {
+                            address: address,
+                            symbol: symbol,
+                            decimals: 18
+                        },
+                    },
+                });
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        // Ejecutar cuando cargue la página
+        document.addEventListener('DOMContentLoaded', renderTokens);
+    </script>
 </body>
 </html>
